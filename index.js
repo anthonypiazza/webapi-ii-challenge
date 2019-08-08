@@ -3,8 +3,8 @@ const express = require('express');
 const postsRoutes = require('./posts/postsRoutes');
 
 // const server = express();
-
-const port = 8000;
+//Heroku adds a PORT variable to the environment automatically
+const port = process.env.PORT || 8000;
 
 const server = require('./api/server')
 
